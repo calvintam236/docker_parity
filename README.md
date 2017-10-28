@@ -4,7 +4,7 @@ Parity is the console full node provided by [paritytech](https://github.com/pari
 
 Parity supports Ethereum (ETH), and Ethereum Classic (ETC).
 
-# How to use this image [AMD64 version]
+# How to use this image [ARM64 version]
 
 Create shared volume:
 
@@ -15,13 +15,13 @@ $ docker volume create --name parity
 Run in background:
 
 ```console
-$ docker run -v parity:/parity -d --name YOUR_CONTAINER_NAME -p YOUR_PORT:YOUR_PORT calvintam236/parity:amd64 -d /parity --port YOUR_PORT
+$ docker run -v parity:/parity -d --name YOUR_CONTAINER_NAME -p YOUR_PORT:YOUR_PORT calvintam236/parity:arm64 -d /parity --port YOUR_PORT
 ```
 
 Get `parity` options with:
 
 ```console
-$ docker run --rm calvintam236/partiy:amd64
+$ docker run --rm calvintam236/partiy:arm64
 ```
 
 Fetch logs of a container:
