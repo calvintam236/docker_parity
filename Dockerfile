@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:jessie-slim
 
 MAINTAINER calvintam236 <calvintam236@users.noreply.github.com>
 LABEL description="Parity in Docker. Full node."
