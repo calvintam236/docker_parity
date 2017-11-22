@@ -7,9 +7,9 @@ WORKDIR /tmp
 
 RUN apt-get update \
     && apt-get -y --no-install-recommends install ca-certificates curl libssl1.0.0 \
-    && curl -L -O https://parity-downloads-mirror.parity.io/v1.7.8/x86_64-unknown-linux-gnu/parity_1.7.8_amd64.deb \
-    && dpkg -i parity_1.7.8_amd64.deb \
-    && rm parity_1.7.8_amd64.deb \
+    && curl -L -O https://parity-downloads-mirror.parity.io/v1.7.9/x86_64-unknown-linux-gnu/parity \
+    && mv parity /usr/local/bin/parity \
+    && chmod a+x /usr/local/bin/parity \
     && apt-get -y remove ca-certificates curl \
     && apt-get -y autoremove \
     && apt-get clean autoclean \
