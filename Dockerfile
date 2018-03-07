@@ -7,9 +7,9 @@ WORKDIR /tmp
 
 RUN apt-get update \
     && apt-get -y --no-install-recommends install ca-certificates curl libssl1.1 \
-    && curl -L -O http://d1h4xl4cr1h0mo.cloudfront.net/v1.8.10/x86_64-unknown-debian-gnu/parity_1.8.10_debian_amd64.deb \
-    && dpkg -i parity_1.8.10_debian_amd64.deb \
-    && rm parity_1.8.10_debian_amd64.deb \
+    && curl -L -O http://d1h4xl4cr1h0mo.cloudfront.net/v1.8.11/x86_64-unknown-debian-gnu/parity_1.8.11_debian_amd64.deb \
+    && dpkg -i parity_1.8.11_debian_amd64.deb \
+    && rm parity_1.8.11_debian_amd64.deb \
     && apt-get -y remove ca-certificates curl \
     && apt-get -y autoremove \
     && apt-get clean autoclean \

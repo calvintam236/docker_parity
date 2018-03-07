@@ -2,7 +2,7 @@
 
 Parity is the console full node provided by [paritytech](https://github.com/paritytech/parity).
 
-Parity supports Ethereum (ETH), and Ethereum Classic (ETC).
+Parity supports Ethereum (ETH), Ethereum Classic (ETC), and Expanse (EXP).
 
 # How to use this image [X86_64 version]
 
