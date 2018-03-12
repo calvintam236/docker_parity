@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:jessie-slim
 
 MAINTAINER calvintam236 <calvintam236@users.noreply.github.com>
 LABEL description="Parity in Docker. Full node."
@@ -6,7 +6,7 @@ LABEL description="Parity in Docker. Full node."
 WORKDIR /tmp
 
 RUN apt-get update \
-    && apt-get -y --no-install-recommends install ca-certificates curl libssl1.1 \
+    && apt-get -y --no-install-recommends install ca-certificates curl libssl1.0.0 \
     && curl -L -O http://d1h4xl4cr1h0mo.cloudfront.net/v1.8.11/aarch64-unknown-linux-gnu/parity_1.8.11_ubuntu_arm64.deb \
     && dpkg -i parity_1.8.11_ubuntu_arm64.deb \
     && rm parity_1.8.11_ubuntu_arm64.deb \
