@@ -1,4 +1,4 @@
-FROM debian:jessie-slim
+FROM ubuntu:16.04
 
 MAINTAINER calvintam236 <calvintam236@users.noreply.github.com>
 LABEL description="Parity in Docker. Full node."
