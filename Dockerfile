@@ -7,9 +7,9 @@ WORKDIR /tmp
 
 RUN apt-get update \
     && apt-get -y --no-install-recommends install ca-certificates curl \
-    && curl -L -O http://d1h4xl4cr1h0mo.cloudfront.net/v1.9.7/aarch64-unknown-linux-gnu/parity_1.9.7_ubuntu_arm64.deb \
-    && dpkg -i parity_1.9.7_ubuntu_arm64.deb \
-    && rm parity_1.9.7_ubuntu_arm64.deb \
+    && curl -L -O http://d1h4xl4cr1h0mo.cloudfront.net/v1.10.3/aarch64-unknown-linux-gnu/parity_1.10.3_ubuntu_arm64.deb \
+    && dpkg -i parity_1.10.3_ubuntu_arm64.deb \
+    && rm parity_1.10.3_ubuntu_arm64.deb \
     && apt-get -y remove ca-certificates curl \
     && apt-get -y autoremove \
     && apt-get clean autoclean \
